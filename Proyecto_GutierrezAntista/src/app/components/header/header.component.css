@@ -1,8 +1,10 @@
 div{
     background-color: rgb(189, 189, 144);
+    margin: 0%;
 }
-app-social{
+.redes{
 float:right;
 margin-top: 25px;
-
+margin-right: 0%;
+margin: 0%;
 }

@@ -1,9 +1,11 @@
 .row{
     padding: 25px;
+    margin: 0%;
 }
 div{
     background-color: rgb(189, 189, 144);
     text-align: center;
+    margin: 0%;
 }
 
 /*etiqueta nombre*/
@@ -31,7 +33,7 @@ div{
         border-radius: 70%;
         box-shadow: 3px 3px 3px grey;
         left: 33%;
-        top: 633px;
+        top: 920px;
         
     }
 }
