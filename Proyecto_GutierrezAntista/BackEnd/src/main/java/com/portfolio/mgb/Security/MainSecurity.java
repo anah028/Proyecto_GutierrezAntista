@@ -46,7 +46,7 @@ public class MainSecurity {
             throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
-
+    
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable()
