@@ -8,14 +8,13 @@ import { NeweducacionComponent } from './components/educacion/neweducacion/newed
 import { EditeducacionComponent } from './components/educacion/editeducacion/editeducacion.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'nuevaexp', component: NewExperienciaComponent },
-  { path: 'editexp/:id', component: EditExperienciaComponent },
-  { path: 'nuevaedu', component: NeweducacionComponent },
-  { path: 'editedu/:id', component: EditeducacionComponent },
-];
-
+  {path:'', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'nuevaexp', component: NewExperienciaComponent},
+  {path: 'editexp/:id', component: EditExperienciaComponent},
+  {path: 'nuevaedu', component: NeweducacionComponent},
+  {path: 'editedu/:id', component: EditeducacionComponent}
+]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
