@@ -1,66 +1,19 @@
 <div class="row">
   <h1>Hard & Soft Skills</h1>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+
+  <div class="col-lg-2">
+    <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+</div>
+
+<div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
     <circle-progress 
-    [percent]="85" 
-    [radius]="100" 
-    [showUnits]="false" 
-    [showSubtitle]="false"
-      [imageSrc]="'../assets/eng.png'" 
-      [showImage]="true" 
-      [imageHeight]="80" 
-      [imageWidth]="80" 
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8" 
-      [outerStrokeColor]="'navy'" 
-      [innerStrokeColor]="'#191970'"
-      [animation]="true"
-      [animationDuration]="500">
-    </circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-     [percent]="90" 
-     [radius]="100" 
+      [percent]="(skill.porcentaje)" 
+      [radius]="100" 
+      [imageSrc]="''" 
+      [title]="(skill.nombre)"
       [showUnits]="false" 
       [showSubtitle]="false"
-      [imageSrc]="'../assets/grupal.png'" 
-      [showImage]="true" 
-      [imageHeight]="80" 
-      [imageWidth]="80"
-      [outerStrokeWidth]="16" 
-      [innerStrokeWidth]="8" 
-      [outerStrokeColor]="'navy'" 
-      [innerStrokeColor]="'#191970'"
-      [animation]="true" 
-      [animationDuration]="500">
-    </circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress 
-    [percent]="70" 
-    [radius]="100" 
-    [showUnits]="false" 
-    [showSubtitle]="false"
-    [imageSrc]="'../assets/git.png'" 
-    [showImage]="true" 
-    [imageHeight]="80" 
-    [imageWidth]="80" 
-    [outerStrokeWidth]="16"
-    [innerStrokeWidth]="8" 
-    [outerStrokeColor]="'navy'" 
-    [innerStrokeColor]="'#191970'" 
-    [animation]="true"
-    [animationDuration]="500">
-  </circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress 
-      [percent]="60" 
-      [radius]="100" 
-      [showUnits]="false" 
-      [showSubtitle]="false"
-      [imageSrc]="'../assets/js.png'" 
+      [imageSrc]="'false'" 
       [showImage]="true" 
       [imageHeight]="80" 
       [imageWidth]="80" 
@@ -69,43 +22,8 @@
       [outerStrokeColor]="'navy'" 
       [innerStrokeColor]="'#191970'" 
       [animation]="true"
-      [animationDuration]="500">
+      [animationDuration]="600">
     </circle-progress>
   </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress 
-      [percent]="75" 
-     [radius]="100" 
-      [showUnits]="false" 
-     [showSubtitle]="false"
-      [imageSrc]="'../assets/html.png'" 
-      [showImage]="true" 
-      [imageHeight]="80" 
-      [imageWidth]="80" 
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8" 
-      [outerStrokeColor]="'navy'" 
-      [innerStrokeColor]="'#191970'" 
-      [animation]="true"
-      [animationDuration]="500">
-    </circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress 
-      [percent]="85" 
-      [radius]="100" 
-      [imageSrc]="'../assets/CSS.png'" 
-      [showImage]="true"
-      [imageHeight]="80" 
-      [imageWidth]="80" 
-      [showUnits]="false" 
-      [showSubtitle]="false" 
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8" 
-      [outerStrokeColor]="'navy'" 
-      [innerStrokeColor]="'#191970'" 
-      [animation]="true"
-      [animationDuration]="500">
-    </circle-progress>
-  </div>
+ 
 </div>
