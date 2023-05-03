@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/Proyecto_GutierrezAntista",
+    "public": "dist/proyecto-gutierrez-antista",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -27,6 +27,7 @@ import { EditSkillComponent } from './components/hys/edit-skill/edit-skill.compo
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,7 @@ import { EditSkillComponent } from './components/hys/edit-skill/edit-skill.compo
     NeweducacionComponent,
     EditeducacionComponent,
     NewSkillComponent,
-    EditSkillComponent
+    EditSkillComponent,
   ],
   imports: [
     BrowserModule,

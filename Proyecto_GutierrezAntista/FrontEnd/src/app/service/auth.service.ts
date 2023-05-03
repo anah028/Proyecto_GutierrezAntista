@@ -4,13 +4,14 @@ import { NuevoUsuario } from '../Model/nuevo-usuario';
 import { Observable } from 'rxjs';
 import { LoginUsuario } from '../Model/login-usuario';
 import { JwtDto } from '../Model/jwt-dto';
-import { ReturnStatement } from '@angular/compiler';
+import { environment } from 'src/environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  authURL= 'https://backendfinal-l6cx.onrender.com/auth/';
+  authURL= environment.URL +'auth/';
   constructor(private httpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{
