@@ -3,13 +3,13 @@
     margin: 0%;
 }
 div{
-    background-color: rgb(189, 189, 144);
+    background-color: rgb(58, 124, 163);
     text-align: center;
     margin: 0%;
 }
 
 /*etiqueta nombre*/
-#Nombre {
+#nombre {
     font-weight: bold;
     margin-top: 10%;
     margin-left: 10px;
@@ -20,7 +20,7 @@ div{
         position:absolute;
         width: 15%;
         border-radius: 70%;
-        box-shadow: 3px 3px 3px grey;
+        box-shadow: 3px 3px 3px rgb(41, 92, 117);
         left: 1%;
         top: 650px;
 

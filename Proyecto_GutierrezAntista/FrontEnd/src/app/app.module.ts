@@ -22,8 +22,7 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion/neweducacion.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion/editeducacion.component';
-import { NewHysComponent } from './components/hys/new-hys/new-hys.component';
-import { HysServiceComponent } from './service/hys-service/hys-service.component';
+
 
 
 
@@ -45,9 +44,7 @@ import { HysServiceComponent } from './service/hys-service/hys-service.component
     NewExperienciaComponent,
     EditExperienciaComponent,
     NeweducacionComponent,
-    EditeducacionComponent,
-    NewHysComponent,
-    HysServiceComponent
+    EditeducacionComponent
   ],
   imports: [
     BrowserModule,

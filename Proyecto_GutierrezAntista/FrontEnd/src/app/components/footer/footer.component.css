@@ -1,6 +1,6 @@
 .row{
     margin: 0%;
-    background-color: rgb(189, 189, 144) ;
+    background-color: rgb(58, 124, 163) ;
 }
 footer{
     margin: 0%;
@@ -9,5 +9,5 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 3px -3px 5px rgb(95, 114, 82);
+    box-shadow: 3px -3px 5px rgb(22, 85, 122);
 }
