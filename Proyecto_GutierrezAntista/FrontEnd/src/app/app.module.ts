@@ -24,6 +24,10 @@ import { NeweducacionComponent } from './components/educacion/neweducacion/newed
 import { EditeducacionComponent } from './components/educacion/editeducacion/editeducacion.component';
 import { NewSkillComponent } from './components/hys/new-skill/new-skill.component';
 import { EditSkillComponent } from './components/hys/edit-skill/edit-skill.component';
+import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de/edit-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -49,6 +53,7 @@ import { EditSkillComponent } from './components/hys/edit-skill/edit-skill.compo
     EditeducacionComponent,
     NewSkillComponent,
     EditSkillComponent,
+    EditAcercaDeComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,6 +61,8 @@ import { EditSkillComponent } from './components/hys/edit-skill/edit-skill.compo
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
   ],
   providers: [
     interceptorProvider

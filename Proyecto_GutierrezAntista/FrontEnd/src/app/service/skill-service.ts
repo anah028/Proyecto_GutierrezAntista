@@ -11,7 +11,7 @@ import { environment } from "src/environments/environment";
   })
   
 export class SkillService {
-        URL= environment.URL+'skill/';
+        URL= environment.URL+'hys/'
       
         constructor(private httpClient: HttpClient) { }
 
