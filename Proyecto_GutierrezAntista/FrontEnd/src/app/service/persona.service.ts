@@ -23,7 +23,7 @@ export class PersonaService {
   }
 
   public update(id: number, Persona: persona): Observable<any>{
-    return this.httpClient.put<any>(this.URL + `editar/${id}`, Persona);
+    return this.httpClient.put<any>(this.URL + `update/${id}`, Persona);
   }
 
 }
